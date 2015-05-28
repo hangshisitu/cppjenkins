@@ -5,7 +5,7 @@ CPPCheckApp=/home/qjxiao/buildenv/cppcheck-1.69/cppcheck
 CPPNCSSReport=cppncssreport.xml
 CPPNCSSApp=/home/qjxiao/buildenv/cppncss-1.0.3/bin/cppncss
 GCOVReport=gcovreport.xml
-GCOVRApp=/home/qjxiao/buildenv/gcovr
+GCOVRApp=/home/qjxiao/buildenv/gcovr/scripts
 
 SRCDir=./src
 RunPath=$BuildPath
