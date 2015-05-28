@@ -15,10 +15,10 @@ GTestReport=gtestreport.xml
 echo "clean vod server"
 make clean
 rm *.gcov > /dev/null
-rm $CPPCheckReport > /dev /null
+rm $CPPCheckReport > /dev/null
 rm -r -f ./cppncss
-rm $GCOVReport > /dev /null
-rm $GTestReport > /dev /null  
+rm $GCOVReport > /dev/null
+rm $GTestReport > /dev/null  
 
 echo "make vod server"
 make
@@ -30,10 +30,10 @@ if [ -r "$BuildPath" ]; then
 
      echo "Make CPPNCSS Report $CPPNCSSReport"
       mkdir ./cppncss > /dev/null
-      $CPPNCSSApp -r -v -x -k -f=./cppncss /$CPPNCSSReport $SRCDir
+      $CPPNCSSApp -r -v -x -k -f=./cppncss/$CPPNCSSReport $SRCDir
      
      echo "Run Test Program, Make Test Report"
-     $RunPath/test --gtest_output=xml:$GTestReport > /dev /null
+     $RunPath/test --gtest_output=xml:$GTestReport > /dev/null
      
      echo "Make GCovr"
      $GCOVRApp -x -r . > $GCOVReport
